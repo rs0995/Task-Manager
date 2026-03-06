@@ -1,0 +1,2 @@
+# Task-Manager
+An all-in-one task management software designed to help small and medium businesses (SMEs) organize, automate, and track daily operational tasks. While Petpooja is widely known for its restaurant Point of Sale (POS) systems, its Tasks module is built to streamline workflows, improve team collaboration, and eliminate endless manual follow-ups.
