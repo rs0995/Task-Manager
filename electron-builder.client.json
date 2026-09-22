@@ -1,0 +1,53 @@
+{
+  "appId": "com.rippl.task-manager",
+  "productName": "Task Manager",
+  "executableName": "Task Manager",
+  "extraMetadata": {
+    "name": "task-manager",
+    "productName": "Task Manager"
+  },
+  "icon": "App.ico",
+  "asar": true,
+  "asarUnpack": [
+    "node_modules/better-sqlite3/**/*",
+    "node_modules/bindings/**/*",
+    "node_modules/file-uri-to-path/**/*"
+  ],
+  "files": [
+    "dist/**/*",
+    "App.ico",
+    "build/icon.*",
+    "main.js",
+    "preload.js",
+    "database.js",
+    "server.js",
+    "client-sync.js",
+    "drive-web-sync.js",
+    "CLIENT_SERVER_SETUP.md"
+  ],
+  "directories": {
+    "output": "release/client"
+  },
+  "win": {
+    "target": "nsis",
+    "icon": "App.ico",
+    "publisherName": "RIPPL",
+    "artifactName": "Task Manager Client Setup ${version}.${ext}"
+  },
+  "nsis": {
+    "guid": "2b3f5f0f-7820-4e91-a0a0-0cc1a37ce101",
+    "shortcutName": "Task Manager",
+    "uninstallDisplayName": "Task Manager",
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": "always",
+    "runAfterFinish": false,
+    "include": "build/installer-client.nsh"
+  },
+  "mac": {
+    "target": "dmg"
+  },
+  "linux": {
+    "target": "AppImage"
+  }
+}

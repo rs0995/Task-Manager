@@ -1,0 +1,16 @@
+{
+  "name": "task-manager",
+  "version": "2.1.2",
+  "description": "Task Manager - Electron + React Desktop Application",
+  "author": "RIPPL",
+  "license": "MIT",
+  "main": "main.js",
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "electron-store": "^8.2.0",
+    "lucide-react": "^0.383.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "productName": "Task Manager"
+}
